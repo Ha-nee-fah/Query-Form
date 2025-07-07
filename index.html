@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <meta name="description"content="CodeBloom Accessibility Exercise">
+    <link rel="stylesheet" href="style.css">
+    <title>Accessibility Exercise</title>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="CodeBloom logo" id="logo">
+        <h1>HTML/CSS EXERCISE</h1>
+        <nav>
+        <ul>
+        <li><a href="#student profile" accesskey="s">PROFILE</a></li>
+        <li><a href="#html-queries" accesskey="s">HTML</a></li>
+        <li><a href="#css-queries" accesskey="s">CSS</a></li>
+        </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <form>
+        <section role="region" aria-labelledby="student-profile">
+        <h2 id="student-profile" class="sp">Student Profile</h2>
+        <div class="profile">
+        <label for="student-name">Name:</label>
+       <input type="text" id="student-name" name="student name"
+         </div>
+         
+        <div class="profile">
+       <label for="student-email">Email:</label>
+       <input type="email" id="student-email" name="student email">
+         </div>
+         
+        <div class="profile">
+        <label for="student-birth-date">D.O.B <span class="sr-only">(Date of birth)</span>:</label>
+       <input type="date" id="student-birth-date" name="student-birth-date"
+         </div>
+        </section>
+        
+       <section role="region" aria-labelledby="html-queries">
+      <h2 id="html-queries">HTML(Questions)</h2>
+       <div class="query-block">
+       <P>1</P>
+       <Fieldset class="query" name="html-query-one">
+  <legend>HTML is a programing language</legend>
+       <ul class="answers-list">
+           <li>
+  <label for="q1-a1"><input type="radio" id="q1-a1" name="q1" value="false">True</label>
+           </li>
+           <li>
+  <label for="q1-a2"><input type="radio" id="q1-a2" name="q1" value="false">False</label>
+           </li>
+           </ul>
+       </Fieldset>
+       </div>
+       
+        <div class="query-block">
+       <P>2</P>
+       <Fieldset class="query" name="html-query-two">
+  <legend>Legends can be placed anywhere within a fieldset tag</legend>
+       <ul class="answers-list">
+           <li>
+  <label for="q2-a1"><input type="radio" id="q2-a1" name="q2" value="true">True</label>
+           </li>
+           <li>
+  <label for="q2-a2"><input type="radio" id="q2-a2" name="q2" value="true">False</label>
+           </li>
+           </ul>
+       </Fieldset>
+       </div>
+       
+        <div class="query-block">
+       <P>3</P>
+       <Fieldset class="query" name="html-query-one">
+  <legend>What is the purpose of the head tag in HTML</legend>
+       <ul class="answers-list">
+           <li>
+  <label for="q3-a1"><input type="checkbox" id="q3-a1" name="q3" value="correct">To define the title of a document</label>
+           </li>
+           <li>
+  <label for="q3-a2"><input type="checkbox" id="q3-a2" name="q3" value="incorrect">To define the style of a document</label>
+           </li>
+           <li>
+  <label for="q3-a3"><input type="checkbox" id="q3-a3" name="q3" value="correct">To contain metadata about HTML document</label>
+           </li>
+           </ul>
+       </Fieldset>
+       </div>
+       </section>
+             
+       <section role="region" aria-labelledby="css-queries">
+      <h2 id="css-queries">CSS(Questions)</h2>
+      <div class="css-row">
+          <div class="query-block">
+ <label for="css-query">Css is used to control the layout of a web page</label>
+          </div>
+          <div class="answer">
+ <select id="css-queries" name="css-query" required>
+ <option value="">select an option</option>
+  <option value="yes">Yes</option>
+   <option value="no">No</option>
+          </select>
+          </div>
+             
+          <div class="query-block">
+ <label for="css-query">Would having two ot more ID selectors with the same name cause q mooth running, and also help the browser to be able to target the correct HTML elments? </label>
+          </div>
+          <div class="answer">
+ <select id="css-query" name="css-query" required>
+ <option value="">select an option</option>
+  <option value="yes">Yes</option>
+   <option value="no">No</option>
+          </select>
+          </div>
+ 
+          <div class="query-block">
+ <label for="css-query">Do you have any questions?</label>
+          </div>
+          <div class="answer">
+     <textarea cols="35" rows="7" id="css-query" name="css-query" placeholder="A css box model..."></textarea>
+           </div>
+           </div>
+         </section>
+    <button type="submit" class="btn">Submit</button>
+    </form>
+    </main>
+    <footer>
+        <address>
+            <a href="#">CodeBloom</a><br> Abuja <br> FCT <br> Nigeria.
+        </address>
+    </footer>
+    
+</body>
+</html>
