@@ -150,6 +150,9 @@ address{
 
 @media (max-width:1480px){
     header{
-        height: 80px;
+        height: 100px;
     }
+    main{
+    padding-top:70px;
+}
 }
